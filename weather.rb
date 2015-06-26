@@ -1,5 +1,4 @@
-# require gems 'nokogiri' and 'yahoo_weatherman'
-require 'nokogiri'
+# require gem 'yahoo_weatherman'
 require "yahoo_weatherman"
 
 # method to lookup weather by zipcode using weatherman gem 
