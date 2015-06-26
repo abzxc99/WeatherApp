@@ -23,14 +23,14 @@ arr.each do |item|
   # convert both strings to an int and check if weekday in response is equal to today.  
   # If yes create a message with "today"
   if (responseDay.to_i == today.to_i)
-    puts "Today is going to be #{item['text']} with a low of #{item['low']} and a high of #{item['high']} degrees celcius"
+    puts "Today is going to be #{item['text'].downcase} with a low of #{item['low']} and a high of #{item['high']} degrees celcius"
   # else check if weekday in response is equal to tomorrow.
   # if yes craete a message with "Tomorrow"
   elsif(responseDay.to_i == today.to_i + 1 )
-    puts "Tomorrow is going to be #{item['text']} with a low of #{item['low']} and a high of #{item['high']} degrees celcius"
+    puts "Tomorrow is going to be #{item['text'].downcase} with a low of #{item['low']} and a high of #{item['high']} degrees celcius"
   else
     # if not today or tomorrow then print extract the weekday from response to create a message
-    puts "#{item['day']} is going to be #{item['text']} with a low of #{item['low']} and a high of #{item['high']} degrees celcius"
+    puts "#{item['day']} is going to be #{item['text'].downcase} with a low of #{item['low']} and a high of #{item['high']} degrees celcius"
   end
 end
 

@@ -16,6 +16,6 @@ response = get_weather(location)
 puts "\n\nResponse forecasts\n"
 arr = response.forecasts
 arr.each do |item|
-  puts "#{item['day']} is going to be #{item['text']} with a low of #{item['low']} and a high of #{item['high']} degrees celcius"
+  puts "#{item['day']} is going to be #{item['text'].downcase} with a low of #{item['low']} and a high of #{item['high']} degrees celcius"
 end
 
